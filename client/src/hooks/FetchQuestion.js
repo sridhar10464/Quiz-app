@@ -16,7 +16,7 @@ export const useFetchQuestion = () => {
         (async () => {
             try {
                 
-                const [{questions, answers}] = await getServerData(`http://localhost:5000/api/questions`, (data) => data)
+                const [{questions, answers}] = await getServerData(`https://quiz-app-7q0t.onrender.com/api/questions`, (data) => data)
                 // console.log(questions, answers)
 
                 if (questions.length > 0) {
