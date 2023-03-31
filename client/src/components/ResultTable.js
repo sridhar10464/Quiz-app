@@ -6,7 +6,7 @@ export default function ResultTable() {
     const [data, setData] = useState([])
 
     useEffect(() => {
-        getServerData(`http://localhost:5000/api/result`, (res) => {
+        getServerData(`https://quiz-app-7q0t.onrender.com/api/result`, (res) => {
             setData(res)
         })
     })
